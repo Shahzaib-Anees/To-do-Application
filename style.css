@@ -120,8 +120,31 @@ body {
     font-size: 20px;
     font-family: var(--font);
     margin: 0;
+    color: #5d39a9;
 }
 
 .listItem>.listItembutton{
+    width: fit-content;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 
+
+.listItembutton>#edit-button{
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    font-size: 20px;
+    padding: 4px 6px;
+    border-radius: 5px;
+}
+
+.listItembutton>#delete-button{
+    background-color: #fff;
+    color: #5d39a9;
+    border: 1px solid #e5e5e5;
+    font-size: 24px;
+    padding: 4px 6px;
+    border-radius: 5px;
 }
