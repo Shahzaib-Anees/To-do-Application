@@ -16,6 +16,8 @@ body {
     --font2: "Roboto", sans-serif;
 }
 
+/* Main Container  */
+
 .container {
     width: fit-content;
     margin: 100px auto;
@@ -42,6 +44,8 @@ body {
     line-height: 50px;
     text-decoration: underline;
 }
+
+/* Task Input Container  */
 
 .input-container {
     width: fit-content;
@@ -93,6 +97,7 @@ body {
     transition: scale 0.5s;
 }
 
+/* Task List Container  */
 
 #list-container {
     width: 100%;
@@ -107,7 +112,6 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px;
-    /* border-top: 1px solid #eaeaea; */
     border-radius: 5px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -125,7 +129,6 @@ body {
 
 .listItem>.listItembutton{
     width: fit-content;
-    /* border: 2px solid red; */
     display: flex;
     align-items: center;
     gap: 5px;

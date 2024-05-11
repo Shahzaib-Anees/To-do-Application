@@ -37,22 +37,17 @@ function pushToTaskList() {
     let deleteButton = document.createElement("button");
     deleteButton.innerHTML = `<i class="fa-solid fa-trash"></i>`;
     deleteButton.setAttribute("id", "delete-button");
-    deleteButton.setAttribute("onclick", "deleteTask()");
+    deleteButton.setAttribute("onclick", "deleteTask(this)");
     taskListItemButtonContainer.appendChild(deleteButton);
     userInput.value = " ";
 }
 
 
 
-function deleteTask() {
-    let deleteTaskButton = document.getElementById("delete-button");
-    var parentElement = deleteTaskButton.parentElement.parentElement;
-    console.log(parentElement.nodeType);
-    parentElement.setAttribute("id", "deleteButtonParent");
-    console.log(parentElement);
-    var deleteButtonParent = document.getElementById("deleteButtonParent");
-    // deleteButtonParent.style.display = "none";
-    // return;
+function deleteTask(element) {
+    var parentElement = element.parentElement.parentElement;
+    parentElement.style.display = "none";
+    console.log("Delete Function has done its Work");
 }
 
 
