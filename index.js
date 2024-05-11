@@ -5,7 +5,7 @@ let task;
 function pushToTaskList() {
     task = userInput.value;
     console.log(task);
-    if (task === "") {
+    if (task === " " || task.length <= 1) {
         alert("Please enter a task to add to list");
         return;
     }
@@ -51,7 +51,8 @@ function pushToTaskList() {
     deleteButton.setAttribute("id", "delete-button");
     deleteButton.setAttribute("onclick", "deleteTask(this)");
     taskListItemButtonContainer.appendChild(deleteButton);
-    userInput.value = "";
+    userInput.value = " ";
+    console.log(userInput.value);
 }
 
 
