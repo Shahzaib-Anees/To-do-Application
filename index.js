@@ -83,6 +83,7 @@ function changeModifier(input) {
     console.log(modifiedTaskValue);
     if (modifiedTaskValue === "") {
         paragraphElement.innerText = task;
+        alert("You have'nt make any change")
     } else {
         task = modifiedTaskValue;
         paragraphElement.innerText = task;
