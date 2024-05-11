@@ -51,7 +51,7 @@ function pushToTaskList() {
     deleteButton.setAttribute("id", "delete-button");
     deleteButton.setAttribute("onclick", "deleteTask(this)");
     taskListItemButtonContainer.appendChild(deleteButton);
-    userInput.value = " ";
+    userInput.value = "";
 }
 
 
